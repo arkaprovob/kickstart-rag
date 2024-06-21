@@ -95,7 +95,7 @@ Let's break down the parameters used in the `main.py` file:
    - `chunk_overlap=150`: This is the number of characters that will overlap between two consecutive chunks. In this case, each chunk will overlap the next one by 150 characters.
    - `length_function=len`: This is the function used to calculate the length of a chunk. In this case, it uses the built-in `len` function which returns the number of characters in a string.
 
-3. `HuggingFaceEmbeddings`: This is a class from the `langchain_huggingface` module. It is used to create embeddings for the chunks of documents. It doesn't take any parameters in this case, so it uses the default parameters defined in the `HuggingFaceEmbeddings` class.
+3. `HuggingFaceEmbeddings`: This is a class from the `langchain_huggingface` module. It is used to create embeddings for the chunks of documents. By default, it doesn't take any parameters in this case, so it uses the default parameters defined in the `HuggingFaceEmbeddings` class, although you can pass the model name and other parameters if needed.
 
 4. `Chroma`: This is a class from the `langchain.vectorstores` module. It is used to create a vector store from the document chunks and their embeddings. The parameters are:
    - `documents=splits`: This is the list of document chunks.
