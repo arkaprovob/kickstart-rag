@@ -1,0 +1,7 @@
+langchain
+langchain-community
+fastembed
+bs4
+langchain-huggingface
+sentence_transformers
+chromadb
